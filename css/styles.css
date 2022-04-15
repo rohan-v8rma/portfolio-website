@@ -103,7 +103,13 @@ header {
 
     font-family: Falling-Sky-Extra-Bold;
     font-size: 1em;
+
+    transition: 0.5s;
 }
+
+.nav-bar-button:hover {
+    color: black;
+} 
 
 .introduction-and-portfolio-button-container {
     display: flex;
@@ -148,5 +154,13 @@ header {
     padding-right: 2.5%;
     /*This is for the space inside the button*/
 
-    
+    transition: 0.5s;
+    /*
+    transition property allows us to change 
+    property values smoothly, over a given duration.
+    */
+}
+
+.portfolio-button:hover {
+    background-color: white;
 }
