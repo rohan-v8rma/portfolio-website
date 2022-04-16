@@ -20,9 +20,8 @@
         format('opentype');
 }
 
-.pink-text {
-    /* color: #d80b37; */
-    color:#6fccc3;
+.red-text {
+    color: red;
 }
 
 .remove-hyperlink-underline {
@@ -32,6 +31,9 @@
 
 .html-and-body {
     height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     /* 
     In order for the webpage to take up 
     the full height of the screen, 
@@ -42,22 +44,19 @@
     After that, we have to set 100% height for
     <body> tag as well.
     */
-    width: 100%;
 }
 
 body {
-    width: 100%;
-    margin: 0;
-
-    background-image: url('../images/beach.jpg');
+    background-image: url('../images/countach.jpg');
     /*
     NOTE that because we are inside the CSS folder, 
     we first have to go up a directory and then choose
     the images folder.
-    */
-
-    background-color: black;
-    color: white;
+    */    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: antiquewhite;
 }
 
 header {
@@ -89,6 +88,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+    height: 100%;
     /*This is for the nav-bar buttons.*/
 }
 
@@ -100,15 +101,19 @@ header {
     to block/inline-block so that 
     its shape can be manipulated. */
     height: 100%;
-
+    
     font-family: Falling-Sky-Extra-Bold;
     font-size: 1em;
+    text-align: center;
+    margin: 2%;
 
     transition: 0.5s;
+    
 }
 
 .nav-bar-button:hover {
-    color: black;
+    color: red;
+    font-size: 1.1em;
 } 
 
 .introduction-and-portfolio-button-container {
@@ -140,18 +145,19 @@ header {
     
     border-style: solid;
     /*This border-style property makes the border visible*/
-    
-    /* border-color: #d80b37; */
-    border-color: #6fccc3;
+    border-color: red;
     
     width: 60%;
     
     margin-bottom: 10%;  
 
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    margin-top: 1%;
+    margin-left: 0.5%;
+
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
     /*This is for the space inside the button*/
 
     transition: 0.5s;
@@ -162,5 +168,13 @@ header {
 }
 
 .portfolio-button:hover {
-    background-color: white;
+    background-color: antiquewhite;
+    /* background-image: radial-gradient(ellipse at center, white 0, red 100%); */
+    margin-top: 0%;
+    margin-left: 0%;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
